@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <table style="width:100%">
+  <tr>
+    <td><b>Id</b></td>
+    <td><b>Username</b></td>
+    <td><b>Email</b></td>
+  </tr>
+  <hr>
+<%for(var i=0;i<list.length;i++){%>
+  <tr>
+  <td style="width:160px;padding-right:8px;"><%=list[i].id%></td>
+    <td style="width:250px"><%= list[i].username %></td>
+    <td><%= list[i].email %></td>
+    <td style="width:50px">
+    <a href = '/update/<%= list[i].id %>'></a></td>
+    <td style="width:50px">
+    <a href = '/diary/<%= list[i].id %>' onclick="return confirm('Are you sure you want to delete this item?')">
+    <button type="button" class="btn btn-danger" style="margin:5px">Delete</button>
+</a></td>
+</td>
+  </tr>
+        <%}%>
+        </table>
+  <hr>
+  </body>
+</html>
