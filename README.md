@@ -68,6 +68,8 @@ How to start server :
 │   └── www
 ├── config
 │   └── config.json
+├── controller
+│   └── controller.js
 ├── migrations
 │   └── 20161024044904-create-users.js
 ├── models
