@@ -26,7 +26,7 @@ ORM's Installation :
 
 > Setting config.json
 
-Pretty Json :
+Pretty Json : (Add '| prettyjson' after installation)
 > npm install --save-dev prettyjson
 
 How to start server :
@@ -49,8 +49,8 @@ How to start server :
 
 | Action |Request|
 |---------|-------|
-|CREATE|curl -X POST http://localhost:3000/api/users -d "username=newUsername&password=123456&email=newUser@yahoo.com&website=newUser.com"|
-|READ All Users|curl -X GET http://localhost:3000/api/users |
+|CREATE|curl -X POST http://localhost:3000/api/users -d "username=newUsername&password=123456&email=newUser@yahoo.com&website=newUser.com" |
+|READ All Users|curl -X GET http://localhost:3000/api/users  |
 | Read One User | curl -X GET http://localhost:3000/api/users/1 |
 |Edit One user | curl -X PUT http://localhost:3000/api/users/1 -d "username=newUsername&password=12345689&email=newEmailUser@yahoo.com&website=newUser.com"|
 |Delete One User | curl -X DELETE http://localhost:3000/api/users/1 |
@@ -91,4 +91,4 @@ How to start server :
 ************************************
 
 ## Contributor
-Ken Duigraha Putra .&trade 2016
+Ken Duigraha Putra &copy; 2016
