@@ -12,7 +12,8 @@ Here are some technologies that used and required to run this program. Make sure
 ## Files and directory structure
 
 If you need to edit the routes you can access  `routes/api_users.js` file, and if you need to edit the logic and data operations you can access `controller/userController.js`
-```.
+```
+.
 ├── README.md
 ├── app.js
 ├── bin
@@ -39,12 +40,14 @@ If you need to edit the routes you can access  `routes/api_users.js` file, and i
 └── views
     ├── error.jade
     ├── index.jade
-    └── layout.jade```
+    └── layout.jade
+```
 
 
 ## package.json file and dependencies list
 
-```{
+```
+{
   "name": "rest-basic",
   "version": "0.0.0",
   "private": true,
@@ -65,7 +68,8 @@ If you need to edit the routes you can access  `routes/api_users.js` file, and i
   "devDependencies": {
     "prettyjson": "^1.1.3"
   }
-}```
+}
+```
 
 ## Running rest-basic on your machine
 Here are some steps you've to follow for running this rest-basic API on your machine :
