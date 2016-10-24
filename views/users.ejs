@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<table>
+    <tr>
+        <td>Id.</td>
+        <td>Username</td>
+        <td>Firstname</td>
+        <td>Lastname</td>
+        <td>Email</td>
+        <td>Phone</td>
+    </tr>
+
+    <% for (var i = 0; i< user.length; i++) { %>
+    <tr>
+        <td><%= user[i].id%></td>
+        <td><%= user[i].username%></td>
+        <td><%= user[i].firstname%></td>
+        <td><%= user[i].lastname%></td>
+        <td><%= user[i].email%></td>
+        <td><%= user[i].phone%></td>
+    </tr>
+    <% } %>
+</table>
+</body>
+</html>
