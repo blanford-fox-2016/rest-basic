@@ -74,9 +74,9 @@ If you need to edit the routes you can access  `routes/api_users.js` file, and i
 ## Running rest-basic on your machine
 Here are some steps you've to follow for running this rest-basic API on your machine :
 * `cd your_program_directory`
+* `npm install` (Install all dependencies of this program)
 * make sure you have a database on your postgreSQL server named `rest_api`, or you can use a different database name and SQL database type, but still remember to edit the `config/config.json` file according to your prefered database configuration.
 * `sequelize db:migrate` (migrate all tables neede in your database table)
-* `npm install` (Install all dependencies of this program)
 * `npm start` (Run the node.js server on port 3000)
 
 ## API References
