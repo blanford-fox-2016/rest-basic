@@ -10,6 +10,8 @@ Here are some technologies that used and required to run this program. Make sure
 * [PostgreSQL (SQL Database)](https://www.postgresql.org/)
 
 ## Files and directory structure
+
+If you need to edit the routes you can access  `routes/api_users.js` file, and if you need to edit the logic and data operations you can access `controller/userController.js`
 ```.
 ├── README.md
 ├── app.js
