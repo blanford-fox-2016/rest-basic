@@ -51,5 +51,8 @@ module.exports = {
       console.log("Data Updated");
       res.send("DATA UPDATED")
     })
+  },
+  auth : function(req, res){
+
   }
 }

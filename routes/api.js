@@ -15,4 +15,6 @@ router.delete('/:id', userController.destroy);
 
 router.put('/:id', userController.update);
 
+router.get('/auth', userController.auth)
+
 module.exports = router;

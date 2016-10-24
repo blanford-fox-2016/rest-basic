@@ -27,3 +27,36 @@ Read All User | curl -X GET http://localhost:3000/api/users
 Read One User by Id | curl -X GET http://localhost:3000/api/users/2
 Update User by Id | curl -X PUT http://localhost:3000/api/users/1 -d "username=UpdateUser&birthday=2010/01/01&email=UpdateEmail@ema.il"
 Delete User by Id | curl -X DELETE http://localhost:3000/api/users/4
+---
+## Directory
+```
+.
+├── README.md
+├── app.js
+├── bin
+│   └── www
+├── config
+│   └── config.json
+├── controller
+│   └── userController.js
+├── migrations
+│   └── 20161024052904-create-user.js
+├── models
+│   ├── index.js
+│   └── user.js
+├── node_modules
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+├── routes
+│   ├── api.js
+│   ├── index.js
+│   └── users.js
+├── seeders
+│   └── 20161024061300-intial-seed.js
+└── views
+    ├── error.ejs
+    └── index.ejs
+```
