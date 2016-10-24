@@ -41,7 +41,9 @@ If you need to edit the routes you can access  `routes/api_users.js` file, and i
     ├── index.jade
     └── layout.jade```
 
+
 ## package.json file and dependencies list
+
 ```{
   "name": "rest-basic",
   "version": "0.0.0",
