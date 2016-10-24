@@ -11,8 +11,7 @@ const cors = require('cors');
 // Connecting to Database
 // =================================
 
-const models = require('./models');
-const User = models.User;
+const controller = require('./controller/controller');
 
 // ==================================
 // Initial Setup
@@ -35,53 +34,11 @@ app.use(cors());
 // SET THE END POINT
 // ==================================
 
-router.get('/users', (req, res) => {
-    User.findAll().then(data => {
-        res.json(data);
-    });
-});
-
-router.get('/users/:id', (req, res) => {
-    User.findOne({
-        where: {
-            id: req.params.id
-        }
-    }).then((data) => {
-        res.json(data);
-    });
-});
-
-router.post('/users', (req, res) => {
-  User.create({
-    username : req.body.username,
-    password : req.body.password,
-    email : req.body.email
-  }).then((data) => {
-    res.json(data)
-  })
-});
-
-router.delete('/users/:id', (req, res) => {
-  User.destroy({
-    where: {
-      id : req.params.id
-    }
-  }).then(() => {
-    res.send("It's been deleted")
-  })
-});
-
-router.put('/users/:id', (req, res) => {
-  User.update({
-    username: req.body.username,
-    password: req.body.password,
-    email : req.body.email
-  }, {
-    where : {
-      id : req.params.id
-    }
-  });
-});
+router.get('/users', controller.showAll);
+router.get('/users/:id', controller.findById);
+router.post('/users', controller.addUser);
+router.delete('/users/:id', controller.destroyUser);
+router.put('/users/:id', controller.updateUser);
 
 // ==================================
 // SET THE APP ROUTES
