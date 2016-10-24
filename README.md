@@ -10,6 +10,7 @@ Rest Basic With Node Js & Express Generator
 
 > npm install --save nodemon
 
+> npm npm install --save-dev babel-cli babel-preset-es2015
 
 Database : postgres
 > npm install -g pg
