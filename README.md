@@ -9,6 +9,61 @@ Here are some technologies that used and required to run this program. Make sure
 * [Sequelize (NodeJS ORM)](http://docs.sequelizejs.com/en/v3/)
 * [PostgreSQL (SQL Database)](https://www.postgresql.org/)
 
+## Files and directory structure
+```.
+├── README.md
+├── app.js
+├── bin
+│   └── www
+├── config
+│   └── config.json
+├── controllers
+│   └── userController.js
+├── migrations
+│   └── 20161024060841-create-user.js
+├── models
+│   ├── index.js
+│   └── user.js
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+├── routes
+│   ├── api_users.js
+│   ├── index.js
+│   └── users.js
+├── seeders
+└── views
+    ├── error.jade
+    ├── index.jade
+    └── layout.jade```
+
+## package.json file and dependencies list
+```{
+  "name": "rest-basic",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "pg": "^6.1.0",
+    "sequelize": "^3.24.5",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "prettyjson": "^1.1.3"
+  }
+}
+```
+
 ## Running rest-basic on your machine
 Here are some steps you've to follow for running this rest-basic API on your machine :
 * `cd your_program_directory`
