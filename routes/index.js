@@ -39,7 +39,7 @@ router.post('/api/users', (req, res, next) => {
     username: req.body.username,
     password: req.body.password,
     email: req.body.email,
-    website:req.body.email
+    website:req.body.website
   }).then((user) => {
     console.log(`Insert new user success`);
     res.json(user)
@@ -55,7 +55,7 @@ router.put('/api/users/:id', (req, res, next) => {
     username: req.body.username,
     password: req.body.password,
     email: req.body.email,
-    website:req.body.email
+    website:req.body.website
   }, {
     where: {
       id : req.params.id
