@@ -5,8 +5,14 @@ var user = models.User;
 var userController = require('../controller/userController.js')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/', userController.read);
+
+router.get('/:id', userController.readOne);
+
+router.post('/', userController.create);
+
+router.delete('/:id', userController.destroy);
+
+router.put('/:id', userController.update);
 
 module.exports = router;
