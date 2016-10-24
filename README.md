@@ -65,8 +65,7 @@ If you need to edit the routes you can access  `routes/api_users.js` file, and i
   "devDependencies": {
     "prettyjson": "^1.1.3"
   }
-}
-```
+}```
 
 ## Running rest-basic on your machine
 Here are some steps you've to follow for running this rest-basic API on your machine :
