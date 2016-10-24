@@ -70,5 +70,47 @@ Route | HTTP | Description |
 `localhost:3000/api/users/:id` | DELETE | Delete one user by id
 `localhost:3000/api/users/:id` | PUT | Edit user by id
 
+## CURL example
+Request | Action |  
+------|------|
+`curl -X GET "http://localhost:3000/api/users"` | Get all user data
+`curl -X GET "http://localhost:3000/api/users/1"` | Get user data id 1
+`curl -X POST "http://localhost:3000/api/users" -d "username=newUsername&email=newEmail@gmail.com&website=newWebsite.com"` |  Create new user
+`curl -X DELETE "http://localhost:3000/api/users/1"` | Delete user id 1
+`curl -X PUT "http://localhost:3000/api/users/1" -d "username=newUsername&email=newEmail@gmail.com&website=newWebsite.com"` | Edit user id 1
+
+## Tree view Directory
+```
+.
+├── app.js
+├── bin
+│   └── www
+├── config
+│   └── config.json
+├── controller
+│   └── controller.js
+├── migrations
+│   └── 20161024043352-create-user.js
+├── models
+│   ├── index.js
+│   └── user.js
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+├── README.md
+├── routes
+│   ├── index.js
+│   └── users.js
+├── seeders
+└── views
+    ├── error.jade
+    ├── index.jade
+    └── layout.jade
+
+12 directories, 14 files
+```
+
 ## Contributors
 Copyright 2016 ahyanarizky
